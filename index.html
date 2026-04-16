@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>To-Do List 🚀</h1>
+
+    <section class="form">
+      <input 
+        type="text" 
+        id="taskInput" 
+        placeholder="Digite uma tarefa..."
+      >
+      
+      <select id="priority">
+        <option value="alta">🔥 Alta</option>
+        <option value="media">⚡ Média</option>
+        <option value="baixa">🌱 Baixa</option>
+      </select>
+
+      <button id="addBtn">Adicionar</button>
+    </section>
+
+    <section class="filters">
+      <button data-filter="all">Todas</button>
+      <button data-filter="pending">Pendentes</button>
+      <button data-filter="completed">Concluídas</button>
+    </section>
+
+    <ul id="taskList"></ul>
+
+    <p id="emptyMessage">Nenhuma tarefa ainda 👀</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
